@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,600&display=swap');
 
+/* GERAIS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--Poppins);
 }
 
 :root{
     /* COLORS */
+    --Destaq: #65534C;
+    --Destaq-2: #A49995;
+    --Pale-Purple: #F5ECFF;
+    --Eerie-Black: #1D201F;
+    --White: #fff;
+    --White-2: #F3F1F0;
+    --Black: #1f1f1f;
+    --Black-2: #404040;
     /* FONTS */
     --Poppins: 'Poppins', sans-serif;
     --Comfortaa: 'Comfortaa', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
 }
