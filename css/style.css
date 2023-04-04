@@ -127,7 +127,20 @@ header ion-icon{
 
     header.active .nav li a{
         font-size: 2rem;
+        color: var(--White);
     }
+
+    /* MEDIA ABOUT */
+    #about .about__container{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .about__container-img{
+        margin: 0 auto;
+        height: 15rem;
+    }
+
 }
 
 /* HOME */
@@ -197,3 +210,39 @@ header ion-icon{
 }
 
 /* SOBRE */
+#about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+#about .about__container{
+    background-image: url(../images/arabesco-left-top.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    border: 2px solid var(--Black-2);
+    border-radius: 50px;
+}
+
+#about .about__container .about__container-text{
+    text-align: center;
+}
+
+#about .about__container .about__container-text h2{
+    font-family: var(--Comfortaa);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+}
+
+#about .about__container .about__container-text p{
+    letter-spacing: 1.2px;
+    line-height: 1.7rem;
+}
