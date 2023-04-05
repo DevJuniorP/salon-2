@@ -246,3 +246,150 @@ header ion-icon{
     letter-spacing: 1.2px;
     line-height: 1.7rem;
 }
+
+/* SERVICES */
+#services{
+    background: url(../images/arabesco-left-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .services__title{
+    font-family: var(--Comfortaa);
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 2rem;
+}
+
+#services .services__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#services .services__container-single .services__container-img{
+    width: 300px;
+    height: 200px;
+}
+
+#services .services__container-single{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+#services .services__container-single::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: red;
+}
+
+#services .services__container-single::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--Eerie-Black);
+}
+
+#services .services__container-single .services__container-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#services .services__container-single .services__container-desc p{
+    font-family: var(--Comfortaa);
+    font-size: 1.9rem;
+    color: var(--Eerie-Black);
+}
+
+/* GALERIA */
+#galery{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../images/arabesco-left-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#galery .galery__container-img{
+    width: 300px;
+    height: 200px;
+}
+
+.galery__title, .galery__sub-title{
+    font-family: var(--Comfortaa);
+    margin-bottom: 2rem;
+}
+
+.galery__title{
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+}
+
+.galery__sub-title{
+    font-size: 1.4rem;
+    color: var(--Eerie-Black);
+}
+
+.galery__title-desc{
+    width: 700px;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    color: var(--Eerie-Black);
+    margin-bottom: 2rem;
+}
+
+.galery__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galery__container-single{
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.galery__container-img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.galery__container-single::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--Black-2);
+}
+
