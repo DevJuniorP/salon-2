@@ -140,14 +140,6 @@ header ion-icon{
         margin: 0 auto;
         height: 15rem;
     }
-
-}
-
-@media(max-width:600px){
-    #services{
-        padding: 20px 50px;
-        position: static;
-    }
 }
 
 /* HOME */
@@ -491,4 +483,114 @@ footer{
 
 footer span{
     color: var(--Eerie-Black);
+}
+
+/* SCROLL TOP AND AGEND */
+.agendar{
+    position: fixed;
+    top: calc(100% - 6rem);
+    left: 2rem;
+    background-color: #0007;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.agendar a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.agendar .agendar__img{
+    width: 50px;
+}
+
+.agendar span{
+    font-size: 1.2rem;
+    font-family: var(--Comfortaa);
+}
+
+#scroll-top{
+    position: fixed;
+    top: -100%;
+    right: 2rem;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 3rem;
+    background: #0007;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#scroll-top.active{
+    top: calc(100% - 7rem);
+}
+
+#scroll-top ion-icon{
+    color: var(--White);
+}
+
+/* MEDIA QUERY 600PX */
+
+@media (max-width: 600px) {
+    #services{
+        padding: 20px 50px;
+        background-position: bottom left;
+    }
+
+    #services .services__container{
+        gap: 10px;
+    }
+
+    #services .services__container-single ,
+    #services .services__container-single .services__container-desc,
+    #services .services__container-single .services__container-img{
+        width: 220px;
+    }
+    #services .services__container-single .services__container-desc{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* GALERIA */
+    #galery{
+        padding: 20px 50px;
+    }
+
+    #galery .galery__container-single,
+    #galery .galery__container-img{
+        width: 220px;
+        height: 150px;
+    }
+
+    .galery__title-desc{
+        width: 500px;
+        line-height: 1.7rem;
+    }
+
+    #contatos{
+        padding: 20px 50px;
+    }
+
+    #contatos .contatos__right .contatos__right-location,
+    #contatos .contatos__right .contatos__right-tel{
+        font-size: 1rem;
+    }
+
+    #contatos .contatos__right .contatos__right-location ion-icon,
+    #contatos .contatos__right .contatos__right-tel ion-icon{
+        font-size: 1.3rem;
+    }
+
+    /* AGENDAR */
+    .agendar{
+        padding: 10px;
+        top: calc(100% - 5rem);
+    }
+
+    .agendar .agendar__img{
+        width: 30px;
+    }
+
 }
